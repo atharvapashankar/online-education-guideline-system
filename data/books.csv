@@ -1,0 +1,101 @@
+bookId,title,tags,author,publication,category
+1,programming in c,programming|in|c|algorithms,dey pradip,delhi oxford 2013 478pgs,c|programming
+2,database systems,database|systems|sql|dbms,elmasri rame,delhi pearson 2013 1213p,database
+3,mastering c,mastering|c|advancec|algorithms,venugopal kr,new delhi tata mcgraw-hill 2016 702p,c|programming
+4,core python programming,core|python|programming|machine|learning,rao r nageswar,new delhi dreamtech press 2017 715p,python|programming
+5,distributed database systems,distributed|database|systems|sql|dbms,ray chhand,"nodia pearson india education services pvt, ltd 2009 xvi, 308 p",database|distributed computing
+6,cryptography and network security,cryptography|network|security|internetsecurity|security|algorithms,forouzan behrouz,"new delhi tata mcgraw hill education private limited 2010 xxiv, 702 p",cryptography
+7,data mining,data|mining|machine|learning|python|r|businessintelligence,dunham margaret,"delhi pearson education, 2006 xiii, 315 p",data mining
+8,code complete,code|complete,steve mcconnell,"south asia pearson education, 2003 xx, 891 p",networking
+9,advanced internet technology,advanced|internet|technology|html|css|api|web|programming,shah deven n,dreamtech press (new delhi),web programming
+10,information technology project management :,information|technology|project|management|itpm|spm|software,marchewka jack t,"john wiley & sons, inc , (new delhi )",project management
+11,programming with java,programming|with|java|oopm|object,balagurusamy e,"new delhi tata mcgraw-hill book company limited, 2007 xvi, 490 p",java|programming
+12,distributed computing,distributed|computing,mahajan sunita,delhi oxford 2013 616pgs,distributed computing
+13,"microprocessors architecture,programming, and applications with the 8085",microprocessors|architecture|programming|and|applications|8085,gaonkar ramesh s,"mumbai penram international publishing private limited, 1999 x, 820 p",microprocessor|computer architecture
+14,database management systems,database|management|systems|dbms|sql,ramakrishnan ragh,"boston mcgraw-hill, 2000 xxix, 906 p",database
+15,programming in java.,programming|java|object|oopm,malhotra sachi,oxford university press (new delhi),java|programming
+16,information storage and management,information|storage|management|file,gnanasundaram s,india wiley 2013 489p,database|cryptography
+17,computer networks,computer|networks,tanenbaum andrew,"south asia pearson education, 2003 xx, 891 p",networking
+18,clean code,programming|algorithms,robert cecil martin,"new delhi learning material centre, 2001 vi, p",programming|algorithm
+19,database system concepts,database|system|concepts,silberschatz abraha,"boston mcgraw-hill, 2002 xxiv, 1064 p",database
+20,operating system concepts,operating|system|concepts,silberschatz abraha,"new york john wiley & sons inc, 2002 xxi, 887 p",os
+21,communication networks:,communication|networks|computer,leon-garcia albert,"new delhi tata mcgraw-hill publishing house, 2000 xxiii, 867 p",networking
+22,information theory coding and cryptography,information|theory|coding|cryptography,bose ranja,new delhi mcgraw-hill 2013 326pgs,cryptography
+23,computer graphics,computer|graphics|cg,harrington steve,"new york mcgraw-hill books company, 1987 xiv, 466 p",graphics
+24,microprocessors and interfacing :,microprocessors|interfacing,hall douglas v,"new delhi tata mcgraw hill education private limited, 1992 xiii,",microprocessor|computer architecture
+25,modern operating systems,modern|operating|systems,tanenbaum andrew,"new delhi phi learning private limited, 2008 xxiv, 951 p",os
+26,web technology,web|technology|api|programming,kogent solutions inc,new delhi dreamtech press 2014 1354p,web programming
+27,agile web development with rails,ruby|agile,dave thomas,new delhi tata mcgraw-hill 2012 429p,agile|ruby|programming|web programming
+28,wordpress seo success,seo|wordpress,jacob aull,"boston thomson, 1997 xv, 395 p",project management|seo
+29,the 8051 microcontroller,8051|microcontroller,ayala kennet,"new delhi cengage learning india private limited, 2005 xix, 412 p",microprocessor
+30,java : the complete reference,java|complete|reference,schildt herbert,"new delhi tata mcgraw-hill publishing company limited, 2007 xxx, 1024 p",java|programming
+31,programming in ansi c,programming|ansi|c,balagurusamy e,"tata mcgraw-hill publishing company limited, 2007 xii, 543 p",c|programming
+32,c++ coding standards,c++|algorithms|programming,andrei alexandrescu,"new delhi bpb publication, 1991 xx, 772 p",c++|programming
+33,software engineering,software|engineering|development|model,peters james f,"new york john wiley & sons inc, 2004 xviii, 702 p",project management
+34,cloud computing,cloud|computing,jayaswal kailas,delhi dreamtech press 2015 457p,distributed computing|database
+35,wireless networks,wireless|networks,nicopolitidis p,"singapore john wiley & sons ltd, 2003 xvi, 405 p",networking
+36,theoretical computer science,theoretical|computer|science,agrawal sachin,new delhi vikas publication 2014 292pgs,intelligent systems
+37,introduction to algorithms,introduction|algorithms|programming,cormen thomas h,"new delhi prentice hall of india private limited, 2002 xix, 1180 p",intelligent systems
+38,linux labs and open source technologies,linux|labs|open|source|technologies,ambawade dayanan,dreamtech press (new delhi),open source
+39,data structures,data|structures,gilberg richard f,"boston brooks cole, 1998 xvi, 671 p",c|programming
+40,discrete-event system simulation,discrete|event|system|simulation,banks jerry,new delhi pearson 2014 564p,simulation
+41,ruby on rails 5.0 for autodidacts: learn ruby 2.3 and rails 5.0,ruby|agile,stefan wintermeyer,"boston thomson brook cole, 1998 xvi, 671 p",agile|ruby|programming|web programming
+42,data communication and networking,data|communication|and|networking,forouzan behrouz,new delhi tata mcgraw-hill 2014 1226p,networking
+43,ruby on rails tutorial: learn web development with rails,ruby|agile,michael hartl,new delhi tata mcgrahill 2013 315p,agile|ruby|programming|web programming
+44,web technologies,web|technologies|internet|programming,godbole achyut s,"new delhi tata mcgraw-hill publishing company limited, 2003 xviii, 599 p",web programming
+45,let us java,programming|with|java,kanetkar p yashvan,"new delhi tata mc-graw hill education private limited, 2010 xvi, 454 p",java|programming
+46,java 2,java|2,holzner steve,"new delhi dreamtech press, xxxvi, 1460 p",java|programming
+47,computer organization and architecture :,computer|organization|architecture,stallings william,new delhi pearson 2013 682pgs,computer architecture|microprocessor
+48,the art of seo,seo,eric enge,new delhi tata mcgraw-hill 2014 1349p,seo
+49,embedded/real-time systems,embedded|real|time|systems,prasad kvkk,new delhi dreamtech press 2013 639pgs,computer architecture
+50,drupal 8 development cookbook,programming|algorithms|drupal,matt glaman,"new delhi dreamtech, 2014 xxviii, 346 p",web programming|drupal
+51,programming with c,programming|c,gottfried byron s,"new delhi tata mcgraw-hill publishing company limited, 1996 vii, 532 p",c|programming
+52,principles of soft computing,principles|soft|computing,salivahanan s,wiley india 2011,intelligent systems
+53,data warehousing,data|warehousing,mohanty soumendr,"new delhi tata mcgraw-hillpublishing house, 2006 xviii,373 p",data mining|database
+54,the 8051 microcontroller and embedded systems :,8051|microcontroller|embedded|systems,mazidi muhammad al,"new delhi prentic hall, 2006 xii, 547 p",computer architecture
+55,"neural networks, fuzzy logic, and genetic algorithms :",neural|fuzzy|logic|genetic|algorithms,rajasekaran sangutheva,"new delhi prentice-hall of india private limited, 2003 xvi, 439 p",intelligent systems
+56,systems programming,systems|programming,dhamdhere dm,"new delhi tata mcgraw hill education private limited, 2011 xiii, 538 p",web programming
+57,fundamentals of computer algorithms,fundamentals|computer|algorithms,horowitz ellis,"hyderabad universities press, 2007 xx,773 p",intelligent systems|algorithm
+58,game architecture and programming,game|architecture|programming,shankarmani radh,"john wiley india pvt ltd, (new delhi )",python|programming
+59,artificial intelligence :,artificial|intelligence|ai|machine|learning,russell stuart j,"delhi pearson education, 2003 xxviii, 1080 p",intelligent systems
+60,let us c,c|algorithms,kanetkar p yashvan,"new delhi bpb publication, 1995 xix, 658 p",c|programming
+61,introduction to the theory of computation,introducation|theory|computation,sipser michae,"thomson brook cole, (boston )",intelligent systems
+62,e-commerce,e|commerce,whiteley davi,"new delhi tata mcgraw-hill publishing company limited, 2000 xvi, 259 p",project management
+63,the art of computer programming,programming|c,donald knuth,"delhi pearson education, 1992 xxv, 735 p",programming
+64,business intelligence,business|intelligence,vercellis carl,new delhi wiley 2013 417p,project management|data mining
+65,mining of massive datasets,mining|massive|datasets|data,rajaraman anan,cambridge (new delhi),data mining|database
+66,programming pearls,pearls|programming,jon bentley,"tata mcgraw-hill publishing company limited, 2004 xxxiv, 973 p",programming|algorithm
+67,fundamentals of database systems,fundamentals|database|systems,elmasri rame,"new delhi pearson education, 2006 xxxi, 799 p",database
+68,beginning android 4,beginning|android|studio,lee wei-men,wiley (new delhi),android|programming
+69,advanced c++,c++|algorithms|programming,namir clement shammas,"new delhi bpb publication, 1999 xix, 772 p",c++|programming
+70,object oriented programming methodology.,object|oriented|programming|methodology,shankarmani radh,dreamtech press (new delhi),java
+71,digital design,digital|design,kurose james f,"singapore pearson education, 2003 xxvi, 752 p",networking
+72,tactical seo: the theory and practice of search marketing,seo|marketing,lee wilson,"gujarat charotar publishing house pvt ltd , xvi, 708 p",project management|seo
+73,beginning phython,beginning|python,payne james,wiley pub (new delhi),python|programming
+74,refactoring,refactoring|programming,kent beck,"new delhi tata mcgraw hill education private limited 2010 xxiv, 702 p",programming
+75,java programming from the group up,java|programming|group|up,bravaco ralp,tata mcgraw-hill (new delhi),java|programming
+76,professional c++,c++|algorithms|programming,nicholas a. solter,"new dwelhi bpb publications, 2005 xix, 756 p",c++|programming
+77,python projects,python|projects|beit|machine|learning,cassell laur,john wiley & sons (new delhi),python|programming
+78,web engineering,web|engineering|html|css|javascript,pressman roger s,"new delhi tata mcgraw-hill publishing company limited, 2008 xiv, 457 p",web programming
+79,core java for the impatient,java|complete|reference,schildt herbert,"new delhi tata mcgraw-hill publishing company limited, 2007 xxx, 1024 p",java|programming
+80,c++,programming|algorithms|c++,andrei alexandrescu,"boston thomson, 1997 xv, 395 p",c++|programming
+81,introduction to data compression,introduction|data|compression,sayood khali,"ca morgan kaufmann publishers, 2006 xxii, 680 p",data mining|database
+82,microprocessors and interfacing programmng and hardware,microprocessors|interfacing|programmng|hardware,hall douglas v,"tata mcgraw-hill publishing company limited, (new delhi )",microprocessor|computer architecture
+83,c: the complete reference,c|the|complete|reference,schildt herbert,"new delhi tata mcgraw-hill publishing company limited, 2002 xxvi, 805 p",c|programming
+84,head first java,head|first|java,sierra kathy,"2nd ed shroff publishers & distributors pvt ltd, 2005 xxxii, 688 p",java|programming
+85,e-business and e-commerce management:,business|e|commerce|management,chaffey dav,"new delhi pearson, 2009 xxviii, 663 p",project management
+86,introduction to computing and problem solving using python,introduction|computing|problem|solving|python,balagurusamy e,mcgraw-hill education (new delhi),intelligent systems
+87,operating systems,operating|systems,stallings william,"new delhi pearson education pte ltd , 2001 xviii, 779 p",os
+88,data structure using c,data|structure|c,gupta hitesh,new delhi international book house 2012 272pgs,c|programming
+89,adaptive filtering prediction and control,adaptive filtering|prediction,graham goodwin,new delhi bpb publications 2013 647p,intelligent systems|algorithm
+90,java network programming,programming|java|object|oopm,kumar ram,new delhi tata mcgrawhill 2000 452pgs,java|programming
+91,learning ruby,ruby|agile,michael james fitzgerald,new delhi tata mcgraw-hill 2012 429p,agile|ruby|programming|web programming
+92,learn rails 5.2,ruby|agile,stefan wintermeyer,"new delhi tata mcgraw-hill publishing company limited, 2002 xxi, 568 p",agile|ruby|programming|web programming
+93,introduction to artificial neural systems,introduction|artificial|neural|systems,zurada jacek m,"jaico publishing house, (mumbai )",intelligent systems
+94,advanced database management system,advanced|database|management|system,chakrabarti r,dreamtech press (new delhi),database
+95,software engineering: a practitioner's approach,software|engineering|development|model,roger s. pressman,"new delhi phi learning private limited, 2008 xxiv, 951 p",project management
+96,pattern classification,pattern|classification|regex,duda richard o,"new york john wiley & sons inc, 2002 xx, 654 p",data mining|algorithm
+97,windows internals : user mode,user mode|windows,forouzan behrouz,"new delhi tata mcgraw-hill publishing company limited, 2014 xxxiv, 1226 p",windows|os
+98,the elements of java style,systems|programming|java,donovan john j,"new delhi tata mcgraw-hill publishing company limited, 1972 xviii, 488 p",java|programming
+99,c & data structures,c|data|structures,deshpande ps,new delhi dreamtech press 2011 700p,c|programming
+100,computer science,computer|science,forouzan behrouz,"australia brooks cole, 2001 xxviii, 900 p",c|programming

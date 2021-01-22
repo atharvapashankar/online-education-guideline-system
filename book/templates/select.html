@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block content %}
+<h2>select</h2>
+
+<form action="{% url 'get_suggestions2' %}" method="GET">
+        <div class="row">
+        {% for i in context %}
+        
+        
+        
+        <div class="col-md-6">
+                <input type="checkbox" name="bookselected" value="{{i}}">{{i}}<br>
+            </div>
+        {% endfor %}
+    </div>
+<br>
+<button class ="btn btn-primary" type="submit">Search</button>
+</form>
+<hr>
+
+<script>
+        var element = document.getElementById("search");
+        element.classList.add("active");
+</script>
+{% endblock %}

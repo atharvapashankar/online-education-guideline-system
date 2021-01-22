@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block externalcss%}
+<style>
+#id_username, #id_password, .forminput{
+    padding:5px;
+    border-radius: 5px;
+}
+</style>
+
+{% endblock%}
+{% block content %}
+
+{% block title %}{% endblock %}
+    <h1>Log-in</h1>
+    <br>
+    <!-- <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Login</button>
+    </form> -->
+    <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group">
+                    {{field.label}}
+                    {{field}}
+                </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    <script>
+            var element = document.getElementById("login");
+            element.classList.add("active");
+    </script>
+
+{% endblock %}

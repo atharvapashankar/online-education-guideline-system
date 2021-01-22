@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% block externalcss %}
+<style>
+    .booktitle{
+        color:#046968;
+        
+    }
+    .booktitle:hover{
+        color:#5f1802;
+        text-shadow: 1px 1px 1px #d6d6d6;
+        
+    }
+    
+    .bookdata{
+        background-color:#eefdfd;
+        padding:10px;
+    }
+</style>
+
+{% endblock %}
+
+
+
+{% block content %}
+<h2>Recommended for You</h2>
+<!-- {{context}} -->
+<hr>
+{% for i in context%}
+
+<h4 class="booktitle">{{i.title | capfirst}}</h4>
+<div class="bookdata" style="display: none">
+    Author: {{i.author|capfirst}}<br>
+    Publication : {{ i.publication }}<br>
+    Ratings : {{i.average_rating | floatformat}}<br>
+    Rated by : {{i.review_set.count }} users<br>
+    <a class="btn btn-primary btn-sm" href="{% url 'book_detail' i.id%}">All Reviews</a>
+</div>
+<hr>
+{%endfor%}
+
+
+<script>
+  $(document).ready(function(){
+    $(".booktitle").click(function(){
+        $(this).next('div.bookdata').toggle(500);
+  });
+});
+</script>
+<script>
+        var element = document.getElementById("recommendation");
+        element.classList.add("active");
+</script>
+{% endblock %}

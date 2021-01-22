@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{%block content %}
+{% block title %}
+<h2>
+    <a href="{% url 'book_detail' review.book.id% }">{{review.book.title | capfirst }}</a>
+</h2>
+{% endblock%}
+
+<h4>Rated {{ review.rating }} of by {{review.user_name}}</h4>
+<p>{{review.comment}}</p>
+<script>
+        var element = document.getElementById("book-reviews");
+        element.classList.add("active");
+</script>
+{%endblock%}

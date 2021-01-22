@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{% block title %}{% endblock %}
+    <h1>Sign Up</h1>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <script>
+            var element = document.getElementById("register");
+            element.classList.add("active");
+    </script>
+{% endblock %}

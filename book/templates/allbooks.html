@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+
+{% block externalcss %}
+<style>
+    .booktitle{
+        background-color: #d6dad7;
+        /* background-color: #d02552; */
+        
+        border:1px ;
+        
+        padding: 5px 10px;
+        margin: 3px 0px;
+    }
+    #outerbox{
+        padding: 15px 0px;
+    }
+    .booktitle:hover{
+        color: #971701;
+    }
+    .bookdata{
+        background-color:#a0f7be;
+        padding:10px;
+    }
+    
+</style>
+{% endblock %}
+{% block content %}
+        <h2>&nbsp All Books</h2>
+        {% for i in context %}
+        <div class="booktitle">
+            {{i.title | capfirst}}
+        </div>
+        <div class="bookdata" style="display: none">
+            Author: {{i.author|capfirst}}<br>
+            Publication : {{ i.publication }}<br>
+            Ratings : {{i.average_rating | floatformat}}<br>
+            Rated by : {{i.review_set.count }} users<br>
+            <a class="btn btn-success btn-sm" href="{% url 'book_detail' i.id%}">All Reviews</a>
+            
+        </div>
+        
+        {% endfor %}
+    
+    
+<script>
+$(document).ready(function(){
+    $(".booktitle").click(function(){
+        $(this).next('div.bookdata').toggle(500);
+    });
+});
+</script>    
+<script>
+        var element = document.getElementById("home");
+        element.classList.add("active");
+</script>
+{% endblock %}

@@ -1,0 +1,165 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'book/css/bootstrap.min.css' %}">
+    <script src="{% static 'book/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'book/js/bootstrap.min.js' %}"></script>
+    <style>
+        .outerbox{
+            border-radius:5px;
+            box-shadow: 2px 2px 10px #bbb;
+            
+            padding: 15px;
+        }
+        /* body{
+          background-color:red;
+        }
+        div{
+          background-color: green;
+        }
+        div.booktitle{
+          background-color: yellow;
+        } */
+        
+    </style>
+    {% block externalcss %}
+                        
+    {% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="home" href="{% url 'allBooks' %}">Home </span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="book-reviews" href="{% url 'review_list' %}">Book Reviews</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="recommendation" href="{% url 'get_suggestions' %}">Recommendation</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="{% url 'get_suggestions2' %}">Recommendation2</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link" id ="search"href="{% url 'select' %}">Search</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="{% url 'allBooks' %}">All Books</a>
+        </li> -->
+        
+      </ul>
+      {% if user.is_authenticated %}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'review_list' %}" style="color:white;text-transform: capitalize" >Hi {{ user.username }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+        </li>
+      </ul>
+      {% else %}
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="login" href="{% url 'login' %}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="register" href="{% url 'signup' %}">Register</a>
+        </li>
+      </ul>
+      {% endif %}
+
+      
+      
+      
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+</nav>
+<div class="container"> 
+    <br>
+    <div class="row">
+            <div class="col-sm-7 col-xs-12">
+                    <div class="outerbox" id="outerbox">
+                    
+                            {% block content %}
+                        
+                            {% endblock %}
+                    </div>
+            </div>
+        
+            <div class="col-sm-5 col-xs-12">
+                    <div class="outerbox" style="box-sizing: border-box;overflow: auto" >
+                    <h2>Latest Books</h2>
+                    <br>
+                    <table class="table  table-hover">
+                            <thead>
+                              <tr>
+                               
+                                <th scope="col">Book</th>
+                                <th scope="col">Author</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {% if request.session.book %}
+                                {% for i in request.session.book %}
+                                 
+                                  <tr class='clickable-row' data-href='/book/Book/{{i.id}}'>
+                                    
+                                    <td>{{i.title | capfirst}}</td>
+                                    <td>{{i.author | capfirst}}</td>
+                                   
+                                  </tr>
+                                 
+                                
+                                  
+                                {% endfor %}
+                              {% endif%}
+                              <!-- <tr>
+                               
+                                <td>Let Us C</td>
+                                <td>balagurusam e</td>
+                               
+                              </tr>-->
+                              <!-- <tr>
+                                
+                                <td>Computer Science</td>
+                                <td>forouzan behrouz a</td>
+                                
+                              </tr>
+                              <tr>
+                                
+                                <td>Web Technologies</td>
+                                <td>godbole achyut</td>
+                              
+                              </tr> -->
+                            </tbody>
+                          </table>
+                          
+                    </div>
+            </div>
+
+    </div>
+    
+    
+    
+<div>
+</body>
+<script>
+$(document).ready(function(){
+  $(".clickable-row").click(function() {
+      window.location = $(this).data("href");
+  });
+});
+</script>
+
+</html>

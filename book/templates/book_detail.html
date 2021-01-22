@@ -1,0 +1,65 @@
+{% extends 'base.html'%}
+{% block externalcss %}
+<style>
+    .btn{
+        padding: 3px 20px;
+    }
+</style>
+{% endblock%}
+{% block content %}
+
+<h2>{{book.title | capfirst}}</h2>
+<h5>{{book.review_set.count }} reviews ({{ book.average_rating | floatformat}} average rating)</h5>
+Author : {{ book.author |capfirst }}<br>
+Publication : {{ book.publication | capfirst }}
+<hr>
+<h3>Add your Review</h3>
+{% if error_message %} <p><strong>{{error_message}}</strong></p>{% endif %}
+
+{% if user.is_authenticated %}
+<form action="{%url 'add_review' book.id%}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" class="btn btn-success" value="Add"/> as {{ user.username | capfirst }}
+</form>
+{% else%}
+<a href="{% url 'login' %}" class="btn btn-success">Add review</a>
+{% endif %}
+<hr><hr>
+<h3>Recent reviews</h3>
+
+{% if book.review_set.all %}
+
+<div>
+    {% for review in book.review_set.all reversed %}
+    <div>
+        
+        <h6>Rated {{review.rating}} of 5.0 by {{review.user_name | capfirst}}</h6>
+        <em>{{review.comment}}</em>
+        <!-- <h5><a href="{%url 'review_detail' review.id %}">read more</a></h5> -->
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% else%}
+<p>No review for this book</p>
+{%endif%}
+
+<!-- <h3>Add your Review</h3>
+{% if error_message %} <p><strong>{{error_message}}</strong></p>{% endif %}
+
+{% if user.is_authenticated %}
+<form action="{%url 'add_review' book.id%}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Add"/> as {{ user.username }}
+</form>
+{% else%}
+<a href="/admin/">Add review</a>
+{% endif %} -->
+<script>
+        var element = document.getElementById("book-reviews");
+        element.classList.add("active");
+</script>
+
+{% endblock %}
